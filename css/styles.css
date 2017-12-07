@@ -26,6 +26,16 @@
 			padding-bottom: 1em;
 		}
 		
+		.box_title {
+			font-size: 2rem;
+			margin: 0;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			margin-bottom: 20px;
+		}
+		
 		.title span {
 			font-weight: 300;
 			display: block;
@@ -38,6 +48,16 @@
 			font-size: 1.5rem;
 			margin: 0;
 			padding-bottom: 1em;
+		}
+		
+		.box_title {
+			font-size: 1.5rem;
+			margin: 0;
+			border-top: 1px solid black;
+			border-bottom: 1px solid black;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			margin-bottom: 20px;
 		}
 		
 		.title span {
@@ -85,23 +105,212 @@
 	/* BODY */
 
 	.Home {
-		background-color: #F5F5F5;;
+		background-color: #F5F5F5;
 		padding-top: 3em;
 		padding-bottom: 2.5em;
 		width: 100%;
 	}
 	
+	.PhoneImage {
+		background-color: #F5F5F5;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 100%;
+	}
+	
 	.PictureContainer {
-		background-color: #F5F5F5;;
-		margin-top: 1em;;
+		background-color: #F5F5F5;
 		padding-top: 2em;
-		margin:0;
+		width: 100%;
+		float: left;
 		padding-bottom: 2.5em;
 	}
+	
+	.column_phones {
+		float: left;
+		width: 20%;
+		height: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.column_pc {
+		float: left;
+		width: 20%;
+		height: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.column_box {
+		float: left;
+		width: 25%;
+		height: 100%;
+		//padding-left: 5px;
+		//padding-right: 5px;
+	}
+	
+	.column_box_pc {
+		float: left;
+		width: 33.33%;
+		height: 100%;
+		//padding-left: 5px;
+		//padding-right: 5px;
+	}
+	
+	.box_image {
+		width: 100%;
+		height: 6em;
+	}
+	
+	.column_phonesA {
+		float: left;
+		width: 75%;
+		height: 50px;
+	}
+	
+	.column_PCA {
+		float: left;
+		width: 75%;
+		height: 50px;
+	}
+	
+	.column_phonesB {
+		float: left;
+		width: 12.5%;
+		height: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.column_PCB {
+		float: left;
+		width: 12.5%;
+		height: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.row_phones {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border: 1px solid black;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+		height: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	.row_pc {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border: 1px solid black;
+		border-top-left-radius: 7px;
+		border-top-right-radius: 7px;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7px;
+		height: 100%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+		
+	.row_phones:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.row_pc:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.row_box:after {
+		content: "";
+		display: table;
+		clear: both;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.Phone {
+		width: 25px;
+		height: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.PC {
+		width: 25px;
+		height: 50px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	#row_box {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		height: 50%;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+	#LearnButton {
+		color: #0070c9;
+		text-decoration: none;
+		padding-right: 10px;
+	}
+	
+	#LearnButton:hover {
+		color: #0070c9;
+		text-decoration: underline;
+		padding-right: 10px;
+	}
+	
+	#BuyButton {
+		color: #0070c9;
+		text-decoration: none;
+		padding: 10px;
+	}
+	
+	#BuyButton:hover {
+		color: #0070c9;
+		text-decoration: underline;
+		padding: 10px;
+	}
+	
+	#PhoneImage {
+		padding-top: 20px;
+	}
+	
+	#Back {
+		float:right;
+		width: 20%;
+		height: 100%;
+		padding: 0px;
+		display: inline;
+	}
+	
+	#Forward {
+		float:left;
+		width: 20%;
+		height: 100%;
+		padding: 0px;
+		display: inline;
+	}	
 	
 	/* FOOTER */
 	
 	footer {
+		width: 100%;
 		padding-top: 1em;
 		padding-bottom: 2em;
 		background-color: #E8E8E8;
@@ -132,41 +341,23 @@
 	
 	/* SCREEN ARRANGEMENTS */
 	
-	@media screen and (min-width: 480px) {
-		nav a {
-			font-weight: 900;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: .8rem;
-			padding: .1em;
-			color: #FFF;
+	@media screen and (max-width: 765px) {
+		#container {
+			width: 100%;
+			height: 3.5em;
+			padding-left: 25%;
+			padding-right: 25%;
 		}
-		.column {
+			
+		.box_container {
+			background-color: #F5F5F5;
+			padding-top: 2em;
+			width: 100%;
+			height: 16em;
 			float: left;
-			width: 50%;
+			margin-bottom: 20px;
 		}
 		
-		.row:after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-	}
-	
-	@media screen and (max-width: 480px) {
-		nav a {
-			font-weight: 900;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: .7rem;
-			color: #FFF;
-		}
-		nav li {
-			display: inline-block;
-			margin: 0.5em;
-		}
-	}
-	@media screen and (max-width: 765px) {
 		.FooterList li {
 			padding-top: 0.5em;
 			padding-bottom: 0.5em;
@@ -193,6 +384,7 @@
 			float: right;
 		}
 		footer {
+			padding-top: 5px;
 			padding-left: 2em;
 			padding-right: 2em;
 			background-color: #E8E8E8;
@@ -200,6 +392,24 @@
 	}
 	
 	@media screen and (min-width: 765px) {
+		#container {
+			width: 100%;
+			height: 3.5em;
+			padding-left: 25%;
+			padding-right: 25%;
+		}
+		
+		.box_container {
+			background-color: #F5F5F5;
+			padding-top: 2em;
+			width: 100%;
+			height: 16em;
+			float: left;
+			padding-left: 15%;
+			padding-right: 15%;
+			margin-bottom: 20px;
+		}
+		
 		.FooterRow:after {
 			content: "";
 			display: table;
@@ -219,6 +429,77 @@
 		
 		.heading-button {
 			display:none;
+		}
+	}
+	
+	@media screen and (min-width: 480px) {
+		nav a {
+			font-weight: 900;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: .8rem;
+			padding: .1em;
+			color: #FFF;
+		}
+		.column {
+			float: left;
+			width: 50%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	
+	@media screen and (max-width: 480px)  {
+		#container {
+			width: 100%;
+			height: 3.5em;
+			padding-left: 0px;
+			padding-right: 0px;
+		}
+		
+		.box_image {
+			padding-left: 0px;
+			padding-right: 0px;
+			width: 100%;
+			height: 5em;
+		}
+		
+		.box_container {
+			background-color: #F5F5F5;
+			padding-top: 2em;
+			width: 100%;
+			height: 22em;
+			float: left;
+			padding-bottom: 30px;
+			margin-bottom: 25px;
+		}
+		
+		.column_box_pc {
+			float: left;
+			width: 50%;
+			height: 100%;
+		}
+		
+		.column_box {
+			float: left;
+			width: 50%;
+			height: 100%;
+		}
+		
+		nav a {
+			font-weight: 900;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: .7rem;
+			color: #FFF;
+		}
+		nav li {
+			display: inline-block;
+			margin: 0.5em;
 		}
 	}
 	
