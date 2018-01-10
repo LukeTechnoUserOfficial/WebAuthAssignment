@@ -4,15 +4,32 @@
 		<meta name="viewport" content="width=device-width", initial-scale=1">
 		<title>TechnoCorps - Phone</title>
 		<link rel="stylesheet" href="css/styles.css"> 
+		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.png">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	
 	<header>
-		<img src="assets/logo.png" class = "logo">
+		<div class = "row">
+			<div class = "column_top" id = "left">
+				<img src="assets/signup.png" class = "signup">
+				<img src="assets/login.png" class = "login">
+				<h4 id = "welcometext" >Hello Luke!</h4>
+			</div>
+			<div class = "column_top">
+				<img src="assets/logo.png" id = "mainlogo">
+			</div>
+			<div class = "column_top" id = "right">
+				<a href = "Checkout.html">
+					<img src="assets/basket.png" class = "basket">
+				</a>
+			</div>
+		</div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="Home.html">Home</a></li>
 				<li><a href="Phones.html">Phones</a></li>
 				<li><a href="PCs.html">PC</a></li>
 				<li><a href="Accessories.html">Accessories</a></li>
@@ -21,6 +38,35 @@
 	</header>
 	
 	<body>
+	
+		<div id = "overlay">
+		</div>
+		<section id = "bg">
+			<h3 id = "Close">X</h3>
+			<h1 id = "LogTitle">Log in</h1>
+			<h1 id = "SignTitle">Sign up</h1>
+			<section id = "innerbgLogIn">
+				<img src="assets/logo.png" id = "logo">
+				<h3 id = "email">Email:</h3>
+				<input id = "user" type="text" name="Email:" align="left">
+				<h3 id = "password">Password:</h3>
+				<input id = "pass" type="text" name="Password:" align="left">
+				<h5 id = "SignUp">Sign Up</h5>
+				<h5 id = "Login">Login</h5>
+			</section>
+			
+			<section id = "innerbgSignUp">
+				<h3 id = "email">Email:</h3>
+				<input id = "user" type="text" name="Email:" align="left">
+				<h3 id = "password">Password:</h3>
+				<input id = "pass" type="text" name="Password:" align="left">
+				<h3 id = "capture">reCaptura:</h3>
+				<div id = "captura" class="g-recaptcha" data-theme = "dark" data-sitekey="6Le3hj8UAAAAAH6USVQAkg0HA6UgdXwvUIARZi0k"></div>
+				<h5 id = "SignUp">Sign Up</h5>
+				<h5 id = "Login">Login</h5>
+			</section>
+		</section>
+	
 		<div class = "row_phones">
 			<section id = "container">
 				<section class = "column_phonesB">
@@ -59,8 +105,8 @@
 			<h1 class = "title">Main Product
 				<span>Insert Caption Here</span>
 			</h1>
-			<a id = "LearnButton" href = "#"><strong>Learn More ></strong></a>
-			<a id = "BuyButton" href = "#"><strong>Buy ></strong></a>
+			<a id = "LearnButton" href = "LearnMore.html"><strong>Learn More ></strong></a>
+			<a id = "BuyButton" href = "BuyPhone.html"><strong>Buy ></strong></a>
 			<div class="PhoneContainer">
 				<img id = "PhoneImage" src="assets/phone.png">
 			</div>
@@ -104,10 +150,10 @@
 						</li>
 					</a>
 					<div id = "shop" class = "lighter">
-						<li>Phones</li>
-						<li>Laptops</li>
-						<li>PC</li>
-						<li>Accessories</li>
+						<li id = "PhoneIndex">Phones</li>
+						<li id = "LaptopIndex">Laptops</li>
+						<li id = "PCIndex">PC</li>
+						<li id = "AccessoriesIndex">Accessories</li>
 					</div>
 				</ul>
 			</div>
@@ -124,10 +170,10 @@
 						</li>
 					</a>
 					<div id = "account" class = "lighter">
-						<li>Sign up</li>
-						<li>Log in</li>
-						<li>Forgot your password</li>
-						<li>Manage your account</li>
+						<li id = "SignIndex"> Sign up</li>
+						<li id = "LogIndex"> Log in</li>
+						<li id = "PasswordIndex"> Forgot your password</li>
+						<li id = "AccountIndex"> Manage your account</li>
 					<div>						
 				</ul>
 			</div>
@@ -144,12 +190,12 @@
 						</li>
 					</a>
 					<div id = "social" class = "lighter">
-						<li>
+						<li id = "FBIndex"> 
 							<img id = "fb" src="assets/fb.png">
 							<span class = "caption">/TechnoCorps</span>
 						</li>
 						<li>
-						<li>
+						<li id = "TwitterIndex"> 
 							<img id = "tw" src="assets/twitter.png">
 							/OfficialTechnoCorps
 						</li>
@@ -169,7 +215,7 @@
 						</li>
 					</a>
 					<div id = "about" class = "lighter">
-						<li></li>
+						<li id = "AboutIndex">About Us</li>
 					</div>
 				</ul>
 			</div>

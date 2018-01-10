@@ -3,7 +3,7 @@
 	* {
 		box-sizing: border-box;
 	}
-
+	
 	body {
 		margin: 0;
 		font-family: 'Raleway', sans-serif;
@@ -16,10 +16,913 @@
 		padding-left: 1em;
 		padding-right: 1em;
 	}
+	
+	/* ACCOUNT PAGE */
+	
+	
+	
+	/* CHECKOUT PAGE */
+	
+	#Basket {
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 2em;
+		padding-bottom: 52em;
+	}
+	
+	#BasketTitle {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-bottom: 2px solid black;
+	}
+	
+	#Cost {
+		text-align: right;
+		padding-right: 10px;
+	}
+	
+	#TheButtons {
+		width: 100%;
+		height: 5em;
+	}
+	
+	#TheForm {
+		width: 80%;
+		height: 16em;
+		margin-left: 10%;
+		margin-bottom: 2em;
+		padding: 10px;
+		border: 2px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	.form {
+		text-align: left;
+		margin: 0;
+		width: 100%;
+		margin-top: 5px;
+	}
+
+	#Date {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	
+	.expire {
+		width: 20%;
+	}
+	
+	#canvas {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		width: 30%;
+		margin-top:10%;
+		margin-left: 35%;
+		margin-right: 35%;
+		height: 30%;
+		background-color: white;
+		border: 2px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	#CheckoutForm {
+		padding-top: 2em;
+	}
+	
+	#paymentoverlay {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: black;
+		opacity: 0.5;
+	}
+	
+	/* DEMO PAGE */
+	
+	#DemoTitle {
+		margin-top: 5em;
+	}
+	
+	#TheVideo {
+		margin-bottom: 2em;
+	}
+	
+	#tbox {
+		width: 100%;
+		height: 15em;
+	}
+	
+	#WebsiteButton {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+		color: black;
+		border: 2px solid black;
+		padding: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	#DocumentButton {
+		margin: 0;
+		margin-left: 20px;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+		color: black;
+		border: 2px solid black;
+		padding: 10px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	/* BUY PAGE */
+	
+	#BuyTitle h1 {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-bottom: 2px solid black;
+	}
+	
+	/* COLOUR */
+	
+	#chooseColour {
+		border: 2px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	
+	#chooseColour h1 {
+		border-bottom: 2px solid grey;
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 1.5em;
+	}
+	
+	#colours {
+		margin: 0;
+		width: 100%;
+		height: 17em;
+		padding-top: 0.5em;
+		padding-bottom: 2em;
+	}
+	
+	#colour1 {
+		padding: 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	#colour2 {
+		padding: 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	#colour3 {
+		padding: 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	#colour1:hover {
+		border: 5px solid red;
+	}
+	
+	#colour2:hover {
+		border: 5px solid red;
+	}
+	
+	#colour3:hover {
+		border: 5px solid red;
+	}
+	
+	.colour {
+		margin: 0;
+		width: 33.33%;
+		float: left;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	/* CAPACITY */
+	
+	#chooseCapacity h1 {
+		border-bottom: 2px solid white;
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 1.5em;
+	}
+	
+	#chooseCapacity {
+		border: 2px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	
+	#capacity {
+		margin: 0;
+		width: 100%;
+		height: 8em;
+		padding-top: 2em;
+		padding-bottom: 2em;
+	}
+	
+	.storage {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}	
+	
+	#GB16 {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#GB32 {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#GB64 {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#GB250 {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#GB500 {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#TB1 {
+		margin: 0;
+		width: 20%;
+		margin-left: 10%;
+		padding-top: 1em;
+		height: 5em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#GB16:hover {
+		border: 5px solid red;
+	}
+	
+	#GB32:hover {
+		border: 5px solid red;
+	}
+	
+	#GB64:hover {
+		border: 5px solid red;
+	}
+	
+	#GB250:hover {
+		border: 5px solid red;
+	}
+	
+	#GB500:hover {
+		border: 5px solid red;
+	}
+	
+	#TB1:hover {
+		border: 5px solid red;
+	}
+	
+	/* CARRIER */
+	
+	#chooseCarrier h1 {
+		border-bottom: 2px solid grey;
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 1.5em;
+	}
+	
+	#chooseCarrier {
+		border: 2px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+	}
+	
+	#carrier {
+		margin: 0;
+		width: 100%;
+		height: 10em;
+		padding-top: 1em;
+		padding-bottom: 2em;
+	}
+	
+	.carriers {
+		margin: 0;
+		margin-top: 20px;
+		width: 25%;
+		margin-left: 5%;
+		padding-top: .75em;
+		height: 3em;
+		float: left;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		border: 1px solid black;
+	}
+	
+	#EE:hover {
+		border: 5px solid red;
+	}
+	
+	#Three:hover {
+		border: 5px solid red;
+	}
+	
+	#Vodafone:hover {
+		border: 5px solid red;
+	}
+	
+	#O2:hover {
+		border: 5px solid red;
+	}
+	
+	#SimFree:hover {
+		border: 5px solid red;
+	}
+	
+	#Inch13:hover {
+		border: 5px solid red;
+	}
+	
+	#Inch15:hover {
+		border: 5px solid red;
+	}
+	
+	/* PRICES */
+	
+	#thePrice h1 {
+		border-bottom: 2px solid grey;
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 1.5em;
+	}
+	
+	#thePrice {
+		border: 2px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+		height: 20em;
+	}
+	
+	#Items {
+		height: 5.5em;
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid grey;
+	}
+	
+	#divider {
+		margin-left: 10px;
+		margin-right: 10px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid grey;
+		height: 7em;
+	}
+	
+	.Index {
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 2%;
+		padding-top: 5px;
+		width: 45%;
+		height: 2em;
+		float: left;
+		border: 1px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	.TotalAmounts {
+		margin: 0;
+		margin-top: 20px;
+		padding-top: 5px;
+		margin-left: 65%;
+		margin-right: 10px;
+		width: 40%;
+		height: 2em;
+		float: right;
+		border: 1px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	.BuyButtons {
+		margin: 0;
+		margin-top: 20px;
+		padding-top: 5px;
+		width: 20%;
+		height: 2em;
+		border: 1px solid black;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	#CheckoutButton {
+		float: right;
+		margin-right: 10px;
+		text-decoration: none;
+		color: black;
+		width: 25%;
+	}
+	
+	#PurchaseButton {
+		float: right;
+		margin-right: 10px;
+		text-decoration: none;
+		color: black;
+		width: 25%;
+	}
+	
+	#OrderButton {
+		float: right;
+		margin-right: 10px;
+		text-decoration: none;
+		color: black;
+		width: 25%;
+	}
+	
+	#CancelButton {
+		float: left;
+		margin-left: 10px;
+		text-decoration: none;
+		width: 50%;
+		color: black;
+	}
+	
+	/* LEARN MORE PAGE */
+	
+	#LearnMoreImage h1 {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		width: 70%;
+		border-bottom: 2px solid black;
+		float: left;
+	}
+	
+	#LearnMoreBg {
+		width: 100%;
+		height: 30em;
+		margin: 0;
+		margin-top: 20px;
+		padding-right: 25%;
+		padding-left: 25%;
+	}
+	
+	#LearnMorePhone {
+		margin-top: 20px;
+		max-width: 100%;
+		height: auto;
+	}
+	
+	#learnMoreOverview h1 {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 20px;
+		width: 50%;
+		border-bottom: 2px solid grey;
+	}
+	
+	#learnMoreTechSpecs h1 {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 20px;
+		width: 50%;
+		border-bottom: 2px solid grey;
+	}
+	
+	#ProductOverview {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 20px;
+		width: 95%;
+		height: 15em;
+	}
+	
+	#ProductSpecs {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		width: 95%;
+		height: 15em;
+	}
+	
+	#BuyButtonInfo {
+		text-align: right;
+		margin:0;
+		margin-top: 20px;
+		margin-right: 21px;
+		padding: 0;
+		width: 10%;
+		float: right;
+		color: #0070c9;
+		text-decoration: none;
+	}
+	
+	/* ACCESSORIES PAGE */
+	
+	#accesoriesImage h1 {
+		text-align: left;
+		margin: 0;
+		margin-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		border-bottom: 2px solid black;
+	}
+	
+	#accessoryImage {
+		margin: 0;
+		padding: 0;
+		margin-top: 5px;
+		width: 100%;
+		height: 35em;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 2px solid black;
+	}
+	
+	#searchBg {
+		margin-left: 20%;
+		margin-right: 20%;
+		height: 2em;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 1px solid black;
+	}
+	
+	#searchItem {  
+		float: right;
+		margin-top: 5px;
+		margin-right: 25%;
+		width: 45%;
+	}
+	
+	#searchIcon {
+		margin-top: 7px;
+		margin-left: 12.5%;
+		padding: 0;
+		width: 15px;
+		height: auto;
+	}
+	
+	#categorybutton {
+		float: right;
+		width: 20%;
+		margin: 0;
+		margin-right: 25%;
+		margin-left: 2.5%;
+		margin-top: 20px;
+		padding-right: 5px;
+		padding-left: 5px;
+		padding-bottom: 2px;
+		border-bottom: 1px solid rgba(45,45,45,0.5);
+		text-align: left;
+	}
+	
+	#productbutton {
+		float: right;
+		width: 20%;
+		margin: 0;
+		margin-top: 20px;
+		margin-right: 2.5%;
+		margin-left: 20%;
+		padding-right: 5px;
+		padding-left: 5px;
+		padding-bottom: 2px;
+		border-bottom: 1px solid rgba(0,0,0,1);
+		text-align: right;
+	}
+	
+	#categories {
+		margin-top: 5em;
+		width: 100%;
+		height: 20em;
+	}
+	
+	#product {
+		margin-top: 5em;
+		width: 100%;
+		height: 20em;
+	}
+	
+	.products {
+		width: 33%;
+		float: left;
+	}
+	
+	.AccessoryImage {
+		width: 60%;
+		height: auto;
+	}
+	
+	.categories {
+		width: 25%;
+		float: left;
+	}
+	
+	/* LOG IN / SIGN UP */
+	
+	#overlay {
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: black;
+		opacity: 0.5;
+	}
+	
+	#bg {
+		position: fixed;
+		left: 35%;
+		right: 35%;
+		top: 25%;
+		bottom: 28%;
+		background-color: white;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 1px solid black;
+	}
+	
+	#innerbgLogIn {
+		position: fixed;
+		left: 37%;
+		right: 37%;
+		top: 33%;
+		bottom: 30%;
+		background-color: white;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 1px solid black;
+	}
+	
+	#innerbgSignUp {
+		position: fixed;
+		left: 37%;
+		right: 37%;
+		top: 33%;
+		bottom: 30%;
+		background-color: white;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		border: 1px solid black;
+	}
+	
+	#logo {
+		width: 10em;
+		height: auto;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+	}
+	
+	#email {
+		text-align: left;
+		padding-left: 10px;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	#password {
+		text-align: left;
+		padding-left: 10px;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	#capture {
+		text-align: left;
+		padding-left: 10px;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	#captura {
+		text-align: left;
+		padding-left: 10px;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	#confirm {
+		text-align: left;
+		padding-left: 10px;
+		margin: 0;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	
+	#Close {
+		line-height: 30px;
+		text-align: center;
+		margin: 0;
+		float: right;
+		width: 30px;
+		height: 30px;
+		background-color: white;
+		border-top-left-radius: 50%;
+		border-top-right-radius: 50%;
+		border-bottom-left-radius: 50%;
+		border-bottom-right-radius: 50%;
+		border: 1px solid black;
+	}
+	
+	#LogTitle {
+		margin: 0;
+		margin-top: 5%;
+		width: 50%;
+		margin-left: 25%;
+	}
+	
+	#SignTitle {
+		margin: 0;
+		margin-top: 5%;
+		width: 70%;
+		margin-left: 15%;
+	}
+	
+	#user {
+		width: 95%;
+	}
+	
+	#pass {
+		width: 95%;
+	}
+	
+	#Login {
+		margin: 0;
+		float: right;
+		margin-right: 25%;
+		margin-top: 15px;
+	}
+	
+	#SignUp {
+		margin: 0;
+		float: left;
+		margin-left: 25%;
+		margin-top: 15px;
+	}
 
 	/* TYPOGRAPHY */
 
-	@media screen and (min-width: 765px) {
+	@media screen and (min-width: 1025px) {
 		.title {
 			font-size: 2rem;
 			margin: 0;
@@ -43,7 +946,7 @@
 		}
 	}
 	
-	@media screen and (max-width: 765px) {
+	@media screen and (max-width: 1024px) {
 		.title {
 			font-size: 1.5rem;
 			margin: 0;
@@ -69,6 +972,51 @@
 
 	/* HEADER */
 
+	.loginformation {
+		width: 25%;
+		height: 6em;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		float: left;
+	}
+	
+	#left {
+		padding-top: 1.5em;
+		padding-left: 0.5em;
+	}
+	
+	#right {
+		padding-top: 1.5em;
+		padding-right: 0.5em;
+	}
+	
+	#welcometext {
+		float: left;
+		margin:0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+	}
+	
+	.basket {
+		width: 4.em;
+		height: 2.5em;
+		float: right;
+	}
+	
+	.signup {
+		width: 3.75em;
+		height: 2em;
+		float: left;
+	}
+	
+	.login {
+		width: 3em;
+		height: 2em;
+		float: left;
+	}
+
 	header {
 		left: 0;
 		right: 0;
@@ -90,7 +1038,7 @@
 		margin: 0.7em;
 	}
 	
-	.logo {
+	#mainlogo {
 		width: 6em;
 		height: auto;
 		padding-top: 0.5em;
@@ -100,6 +1048,10 @@
 	.container {
 		width: 95%;
 		margin: 0 auto;
+	}
+	
+	.row {
+		background-image: url(../assets/navbg.png);
 	}
 
 	/* BODY */
@@ -124,12 +1076,21 @@
 		width: 100%;
 		float: left;
 		padding-bottom: 2.5em;
+		//margin-top: 20px;
 	}
 	
 	.column_phones {
 		float: left;
 		width: 20%;
 		height: 50px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	
+	.column_top {
+		float: left;
+		width: 33.333%;
+		height: 5.5em;
 		padding-left: 5px;
 		padding-right: 5px;
 	}
@@ -310,6 +1271,9 @@
 	/* FOOTER */
 	
 	footer {
+		//position: absolute;
+		bottom:0;
+		margin:0;
 		width: 100%;
 		padding-top: 1em;
 		padding-bottom: 2em;
@@ -330,6 +1294,7 @@
 	
 	.lighter {
 		color: #303030;
+		text-decoration: none;
 	}
 	
 	#fb, #tw {
@@ -341,7 +1306,142 @@
 	
 	/* SCREEN ARRANGEMENTS */
 	
-	@media screen and (max-width: 765px) {
+	@media screen and (max-width: 1024px) {
+		#canvas {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 60%;
+			margin-top:30%;
+			margin-left: 20%;
+			margin-right: 20%;
+			height: 30%;
+			background-color: white;
+			border: 2px solid black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		
+		#bg {
+			position: fixed;
+			left: 20%;
+			right: 20%;
+			top: 25%;
+			bottom: 30%;
+			background-color: white;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 1px solid black;
+		}
+		
+		#innerbgLogIn {
+			position: fixed;
+			left: 25%;
+			right: 25%;
+			top: 32%;
+			bottom: 35%;
+			background-color: white;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 1px solid black;
+		}
+		
+		#innerbgSignUp {
+			position: fixed;
+			left: 25%;
+			right: 25%;
+			top: 32%;
+			bottom: 35%;
+			background-color: white;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 1px solid black;
+		}
+		
+		#logo {
+			width: 8em;
+			height: auto;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+		
+		#email {
+			text-align: left;
+			padding-left: 10px;
+			margin: 0;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		#password {
+			text-align: left;
+			padding-left: 10px;
+			margin: 0;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		#Close {
+			line-height: 30px;
+			text-align: center;
+			margin: 0;
+			float: right;
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			border: 1px solid black;
+		}
+		
+		#LogTitle {
+			margin: 0;
+			margin-top: 5%;
+			width: 50%;
+			margin-left: 25%;
+		}
+		
+		#SignTitle {
+			margin: 0;
+			margin-top: 5%;
+			width: 70%;
+			margin-left: 15%;
+		}
+		
+		#user {
+			width: 95%;
+		}
+		
+		#pass {
+			width: 95%;
+		}
+		
+		#Login {
+			margin: 0;
+			float: right;
+			margin-right: 25%;
+			margin-top: 15px;
+		}
+		
+		#SignUp {
+			margin: 0;
+			float: left;
+			margin-left: 25%;
+			margin-top: 15px;
+		}
+		
 		#container {
 			width: 100%;
 			height: 3.5em;
@@ -351,11 +1451,11 @@
 			
 		.box_container {
 			background-color: #F5F5F5;
-			padding-top: 2em;
+			padding-top: 15em;
 			width: 100%;
-			height: 16em;
+			height: 30em;
 			float: left;
-			margin-bottom: 20px;
+			margin-bottom: 3em;
 		}
 		
 		.FooterList li {
@@ -384,14 +1484,14 @@
 			float: right;
 		}
 		footer {
-			padding-top: 5px;
+			padding-top: 20px;
 			padding-left: 2em;
 			padding-right: 2em;
 			background-color: #E8E8E8;
 		}
 	}
 	
-	@media screen and (min-width: 765px) {
+	@media screen and (min-width: 1025px) {
 		#container {
 			width: 100%;
 			height: 3.5em;
@@ -454,6 +1554,229 @@
 	}
 	
 	@media screen and (max-width: 480px)  {
+		#canvas {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			width: 80%;
+			margin-top:50%;
+			margin-left: 10%;
+			margin-right: 10%;
+			height: 20%;
+			background-color: white;
+			border: 2px solid black;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+		}
+		
+		#categorybutton {
+			float: right;
+			width: 47%;
+			margin: 0;
+			margin-left: 2.5%;
+			margin-top: 20px;
+			padding-right: 5px;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-bottom: 1px solid grey;
+			text-align: left;
+		}
+		
+		#productbutton {
+			float: right;
+			width: 47%;
+			margin: 0;
+			margin-top: 20px;
+			margin-right: 2.5%;
+			padding-right: 5px;
+			padding-left: 5px;
+			padding-bottom: 2px;
+			border-bottom: 1px solid black;
+			text-align: right;
+		}
+	
+		#accessoryImage {
+			margin: 0;
+			padding: 0;
+			margin-top: 5px;
+			width: 95%;
+			height: 12em;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 2px solid black;
+		}
+		
+		#product {
+			margin:0;
+			margin-top: 5em;
+			margin-bottom: 3em;
+		}
+		
+		.AccessoryImage {
+			width: 70%;
+			height: auto;
+		}
+		
+		.categories {
+			width: 50%;
+			float: left;
+		}
+		
+		.products {
+			margin-left:0;
+			width: 50%;
+			float: left;
+		}
+		
+		#bg {
+			position: fixed;
+			left: 15%;
+			right: 15%;
+			top: 25%;
+			bottom: 18%;
+			background-color: white;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 1px solid black;
+		}
+		
+		#captura {
+			width: 50%;
+		}
+		
+		#innerbgLogIn {
+			position: fixed;
+			left: 20%;
+			right: 20%;
+			top: 35%;
+			bottom: 20%;
+			background-color: white;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 1px solid black;
+		}
+		
+		#innerbgSignUp {
+			position: fixed;
+			left: 20%;
+			right: 20%;
+			top: 35%;
+			bottom: 20%;
+			background-color: white;
+			border-top-left-radius: 30px;
+			border-top-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			border-bottom-right-radius: 30px;
+			border: 1px solid black;
+		}
+		
+		#logo {
+			width: 6em;
+			height: auto;
+			padding-top: 0.5em;
+			padding-bottom: 0.5em;
+		}
+		
+		#email {
+			text-align: left;
+			padding-left: 10px;
+			margin: 0;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		#password {
+			text-align: left;
+			padding-left: 10px;
+			margin: 0;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		
+		#Close {
+			line-height: 30px;
+			text-align: center;
+			margin: 0;
+			float: right;
+			width: 30px;
+			height: 30px;
+			background-color: white;
+			border-top-left-radius: 50%;
+			border-top-right-radius: 50%;
+			border-bottom-left-radius: 50%;
+			border-bottom-right-radius: 50%;
+			border: 1px solid black;
+		}
+		
+		#LogTitle {
+			margin: 0;
+			margin-top: 5%;
+			width: 50%;
+			margin-left: 25%;
+		}
+		
+		#SignTitle {
+			margin: 0;
+			margin-top: 5%;
+			width: 70%;
+			margin-left: 15%;
+		}
+		
+		#user {
+			width: 90%;
+		}
+		
+		#pass {
+			width: 90%;
+		}
+		
+		#Login {
+			margin: 0;
+			float: right;
+			margin-right: 15%;
+			margin-top: 15px;
+		}
+		
+		#SignUp {
+			margin: 0;
+			float: left;
+			margin-left: 15%;
+			margin-top: 15px;
+		}
+		
+		.basket {
+			width: 3.5em;
+			height: 2em;
+			float: right;
+		}
+		
+		.signup {
+			padding: 0;
+			padding-right: 5px;
+			margin-left: 10px;
+			width: 1.5em;
+			height: 1.5em;
+			float: left;
+		}
+		
+		.login {
+			padding: 0;
+			padding-left: 5px;
+			width: 1em;
+			height: 1.5em;
+			float: left;
+		}
+	
 		#container {
 			width: 100%;
 			height: 3.5em;
@@ -500,6 +1823,12 @@
 		nav li {
 			display: inline-block;
 			margin: 0.5em;
+		}
+		footer {
+			padding-top: 2em;
+			padding-left: 2em;
+			padding-right: 2em;
+			background-color: #E8E8E8;
 		}
 	}
 	

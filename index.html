@@ -1,18 +1,36 @@
 <!doctype html>
+
+	<!-- Assets / Scripts / Data -->
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width", initial-scale=1">
-		<title>TechnoCorps - Home</title>
+		<title>TechnoCorps - DEMO PAGE</title>
 		<link rel="stylesheet" href="css/styles.css"> 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	
+	<!-- Header -->
+	
 	<header>
-		<img src="assets/logo.png" class = "logo">
+		<div class = "row">
+			<div class = "column_top" id = "left">
+			</div>
+			<div class = "column_top">
+				<img src="assets/logo.png" id = "mainlogo">
+			</div>
+			<div class = "column_top" id = "right">
+			</div>
+		</div>
+		
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
+				<li><a href="Home.html">Home</a></li>
 				<li><a href="Phones.html">Phones</a></li>
 				<li><a href="PCs.html">PC</a></li>
 				<li><a href="Accessories.html">Accessories</a></li>
@@ -21,60 +39,22 @@
 	</header>
 
 	<body>
-		<section class = "Home">
-			<div class="container">
-				<h1 class = "title">Main Product
-					<span>Insert Caption Here</span>
-				</h1>
-				<img class "image" src="assets/phone.png">
-				<a href="" class="button"></a>
-			</div>
-		</section>
-
-		<div class = "row">
-			<section class = "column">
-				<div class ="PictureContainer">
-					<h1 class = "title">Product One
-						<span>Insert Caption Here</span>
-					</h1>
-					<img src="assets/laptop.png">
-					<a href="" class="button"></a>
-				</div>
-			</section>
-			
-			<section class = "column">
-				<div class ="PictureContainer">
-					<h1 class = "title">Product Two
-						<span>Insert Caption Here</span>
-					</h1>
-					<img class "sectionOne" src="assets/imac.png">
-					<a href="" class="button"></a>
-				</div>
-			</section>
-		</div>
+		<!-- DEMO PAGE -->
+		<h2 id = "DemoTitle"> Welcome to the TechnoCorps Demo Page </h2>
+		<iframe id = "TheVideo" width="420" height="315"
+			src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+		</iframe>
 		
-		<div class = "row">
-			<section class = "column">
-				<div class ="PictureContainer">
-					<h1 class = "title">Product Three
-						<span>Insert Caption Here</span>
-					</h1>
-					<img src="assets/phone.png">
-					<a href="" class="button"></a>
-				</div>
-			</section>
-			
-			<section class = "column">
-				<div class ="PictureContainer">
-					<h1 class = "title">Product Four
-						<span>Insert Caption Here</span>
-					</h1>
-					<img src="assets/phone.png">
-					<a href="" class="button"></a>
-				</div>
-			</section>
+		<br>
+		<div id = "tbox">
+			<a id = "WebsiteButton" href = "Home.html"><strong>Click me to go to the Website</strong></a>
+			<a id = "DocumentButton" href = "#"><strong>Click me to view the Documentation</strong></a>
 		</div>
+		<br>
+		<br>
 	</body>
+	
+	<!-- Footer -->
 	
 	<footer>
 		<div class = "row, FooterRow">
@@ -90,10 +70,10 @@
 						</li>
 					</a>
 					<div id = "shop" class = "lighter">
-						<li>Phones</li>
-						<li>Laptops</li>
-						<li>PC</li>
-						<li>Accessories</li>
+						<li id = "PhoneIndex">Phones</li>
+						<li id = "LaptopIndex">Laptops</li>
+						<li id = "PCIndex">PC</li>
+						<li id = "AccessoriesIndex">Accessories</li>
 					</div>
 				</ul>
 			</div>
@@ -110,10 +90,10 @@
 						</li>
 					</a>
 					<div id = "account" class = "lighter">
-						<li>Sign up</li>
-						<li>Log in</li>
-						<li>Forgot your password</li>
-						<li>Manage your account</li>
+						<li id = "SignIndex"> Sign up</li>
+						<li id = "LogIndex"> Log in</li>
+						<li id = "PasswordIndex"> Forgot your password</li>
+						<li id = "AccountIndex"> Manage your account</li>
 					<div>						
 				</ul>
 			</div>
@@ -130,12 +110,12 @@
 						</li>
 					</a>
 					<div id = "social" class = "lighter">
-						<li>
+						<li id = "FBIndex"> 
 							<img id = "fb" src="assets/fb.png">
 							<span class = "caption">/TechnoCorps</span>
 						</li>
 						<li>
-						<li>
+						<li id = "TwitterIndex"> 
 							<img id = "tw" src="assets/twitter.png">
 							/OfficialTechnoCorps
 						</li>
@@ -155,11 +135,10 @@
 						</li>
 					</a>
 					<div id = "about" class = "lighter">
-						<li></li>
+						<li id = "AboutIndex">About Us</li>
 					</div>
 				</ul>
 			</div>
 		</div>
 	</footer>
-	
 </html>

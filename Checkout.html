@@ -1,15 +1,23 @@
 <!doctype html>
+	
+	<!-- Assets / Scripts / Data -->
+	
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width", initial-scale=1">
-		<title>TechnoCorps - Accessories</title>
+		<title>TechnoCorps - Checkout</title>
 		<link rel="stylesheet" href="css/styles.css"> 
 		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.png">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/default/easyui.css">
+		<link rel="stylesheet" type="text/css" href="http://www.jeasyui.com/easyui/themes/icon.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
+	
+	<!-- Header -->
 	
 	<header>
 		<div class = "row">
@@ -27,6 +35,7 @@
 				</a>
 			</div>
 		</div>
+		
 		<nav>
 			<ul>
 				<li><a href="Home.html">Home</a></li>
@@ -34,11 +43,13 @@
 				<li><a href="PCs.html">PC</a></li>
 				<li><a href="Accessories.html">Accessories</a></li>
 			</ul>
-		</nav>	
+		</nav>
 	</header>
 	
 	<body>
-	
+		
+		<!-- Sign up | Log in Pop up -->
+		
 		<div id = "overlay">
 		</div>
 		<section id = "bg">
@@ -48,18 +59,18 @@
 			<section id = "innerbgLogIn">
 				<img src="assets/logo.png" id = "logo">
 				<h3 id = "email">Email:</h3>
-				<input id = "user" type="text" placeholder="Email" align="left">
+				<input id = "user" type="text" name="Email:" align="left">
 				<h3 id = "password">Password:</h3>
-				<input id = "pass" type="text" placeholder="Password" align="left">
+				<input id = "pass" type="text" name="Password:" align="left">
 				<h5 id = "SignUp">Sign Up</h5>
 				<h5 id = "Login">Login</h5>
 			</section>
 			
 			<section id = "innerbgSignUp">
 				<h3 id = "email">Email:</h3>
-				<input id = "user" type="text" placeholder="Please Enter an Email" align="left">
+				<input id = "user" type="text" name="Email:" align="left">
 				<h3 id = "password">Password:</h3>
-				<input id = "pass" type="text" placeholder="8 Characters Minimum" align="left">
+				<input id = "pass" type="text" name="Password:" align="left">
 				<h3 id = "capture">reCaptura:</h3>
 				<div id = "captura" class="g-recaptcha" data-theme = "dark" data-sitekey="6Le3hj8UAAAAAH6USVQAkg0HA6UgdXwvUIARZi0k"></div>
 				<h5 id = "SignUp">Sign Up</h5>
@@ -67,60 +78,105 @@
 			</section>
 		</section>
 		
-		<section id = "accesoriesImage">
-			<h1>Accessories</h1>
-			<img src="assets/accessorybg.jpg" id = "accessoryImage">
-		</section>
+		<!-- Checkout Page -->
 		
-		<section id = "searchProduct">
-			<h1>Find what you need</h1>
-			<div id = "searchBg">
-				<img src="assets/SearchIcon.png" id = "searchIcon">
-				<input id = "searchItem" type="text" placeholder="Search" align="left">
-			</div>
-			<h5 id = "categorybutton">Browse by category</h5>
-			<h5 id = "productbutton">Browse by product</h5>
-		</section>
-		
-		<section id = "categories">
-			<div class = "categories">
-				<img src="assets/TC-BLACK.png" class = "AccessoryImage" id = "WhatsNew">
-				<h5 class = "AccessoryTitles" >What's New</h5>
-			</div>
-			
-			<div class = "categories">
-				<img src="assets/Case.png" class = "AccessoryImage" id = "Cases">
-				<h5 class = "AccessoryTitles">Cases and Protection</h5>
+		<section id = "Basket">
+			<h3 id = "BasketTitle">Your Basket</h3>
+			<div id = "Grid">
+				<table id="cartcontent" fitColumns="true" style="width:100%;height:auto;">
+					<thead>
+						<tr>
+							<th id = "productItem" field="name" width=20%>Product</th>
+							<th id = "featureItem" field="features" width=20%>Features</th>
+							<th id = "quantityItem" field="quantity" width=20% align="right">Quantity</th>
+							<th id = "priceItem" field="price" width=20% align="right">Price</th>
+							<th id = "vatItem" field="vat" width=20%>VAT</th>
+						</tr>
+					</thead>
+				</table>
 			</div>
 			
-			<div class = "categories">
-				<img src="assets/Headphones.png" class = "AccessoryImage" id = "Headphones">
-				<h5 class = "AccessoryTitles">Headphones and Speakers</h5>
-			</div>
+			<h3 id = "NoItems">You have no items in your basket</h3>
 			
-			<div class = "categories">
-				<img src="assets/Plug.png" class = "AccessoryImage" id = "Power">
-				<h5 class = "AccessoryTitles">Power and Cables</h5>
+			<p id = "Cost">Total: £0</p>
+			
+			<div id = "TheButtons">
+				<a class = "BuyButtons" href = "Home.html" id = "CancelButton">Continue Shopping</a>
+				<a class = "BuyButtons" id = "PurchaseButton">Checkout</a>
 			</div>
 		</section>
 		
-		<section id = "product">
-			<div class = "products">
-				<img src="assets/PhoneAccessories.png" class = "AccessoryImage" id = "Phones">
-				<h5 class = "AccessoryTitles">Phones</h5>
-			</div>
+		<section id = "CheckoutForm">
+			<form id = "TheForm">
+				<h5 class = "form">Delivery Address</h5>
+				<br>
+				<select class = "form" name="Title" align = "left">
+					<option value="NotChosen">Title</option>
+					<option value="Mr">Mr.</option>
+					<option value="Mrs">Mrs.</option>
+					<option value="Miss">Miss.</option>
+					<option value="Ms">Ms.</option>
+					<option value="Dr">Dr.</option>
+					<option value="Prof">Professor.</option>
+					<option value="None">Not Specified.</option>
+				</select>
+				<input class = "form" id = "FName" type="text" name="FName:" placeholder="First Name">
+				<input class = "form" id = "LName" type="text" name="LName:" placeholder="Last Name">
+				<input class = "form" type="text" name="SAddress:" placeholder="Street Address">
+				<input class = "form" type="text" name="TCity:" placeholder="Town/City">
+				<input class = "form" type="text" name="PCode:" placeholder="Postal Code">
+			</form>
 			
-			<div class = "products">
-				<img src="assets/LaptopAccessories.png" class = "AccessoryImage" id = "Laptops">
-				<h5 class = "AccessoryTitles">Laptops</h5>
-			</div>
-			
-			<div class = "products">
-				<img src="assets/PCAccessories.png" class = "AccessoryImage" id = "PCs">
-				<h5 class = "AccessoryTitles">PCs</h5>
+			<form id = "TheForm">
+				<h5 class = "form">Payment Information</h5>
+				<br>
+				<select class = "form" name="Card Type" align = "left">
+					<option value="NotChosen">Card Type</option>
+					<option value="Visa">Visa</option>
+					<option value="Master">Mastercard</option>
+					<option value="Master">American Express</option>
+				</select>
+				<input class = "form" id = "CName" type="text" name="CName:" placeholder="Cardholder Name">
+				<input class = "form" id = "CNumber" type="text" name="CNumber:" placeholder="Card Number">
+				<input class = "form" id = "SecurityCode" type="text" name="SNumber:" placeholder="Security Number">
+				<br>
+				<br>
+				<h5 class = "form" id = "Date">Card Expiration Date</h5>
+				<select name='expireMM' class='expire'>
+					<option value=''>Month</option>
+					<option value='01'>January</option>
+					<option value='02'>February</option>
+					<option value='03'>March</option>
+					<option value='04'>April</option>
+					<option value='05'>May</option>
+					<option value='06'>June</option>
+					<option value='07'>July</option>
+					<option value='08'>August</option>
+					<option value='09'>September</option>
+					<option value='10'>October</option>
+					<option value='11'>November</option>
+					<option value='12'>December</option>
+				</select> 
+				<select name='expireYY' class='expire'>
+					<option value=''>Year</option>
+					<option value='18'>2018</option>
+					<option value='19'>2019</option>
+					<option value='20'>2020</option>
+				</select> 
+			</form>
+			<div id = "TheButtons">
+				<a class = "BuyButtons" href = "Home.html" id = "CancelButton">Cancel Order</a>
+				<a class = "BuyButtons" id = "OrderButton">Place Order</a>
 			</div>
 		</section>
+		
+		<div id = "paymentoverlay">
+		</div>
+		<canvas id="canvas"></canvas>
+		
 	</body>
+	
+	<!-- Footer -->
 	
 	<footer>
 		<div class = "row, FooterRow">

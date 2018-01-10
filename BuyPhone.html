@@ -1,15 +1,21 @@
 <!doctype html>
+	
+	<!-- Assets / Scripts / Data -->
+	
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width", initial-scale=1">
-		<title>TechnoCorps - Accessories</title>
+		<title>TechnoCorps - Buy</title>
 		<link rel="stylesheet" href="css/styles.css"> 
 		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.png">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<script type="text/javascript" src="http://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
 		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</head>
+	
+	<!-- Header -->
 	
 	<header>
 		<div class = "row">
@@ -27,18 +33,21 @@
 				</a>
 			</div>
 		</div>
+		
 		<nav>
 			<ul>
-				<li><a href="Home.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="Phones.html">Phones</a></li>
 				<li><a href="PCs.html">PC</a></li>
 				<li><a href="Accessories.html">Accessories</a></li>
 			</ul>
-		</nav>	
+		</nav>
 	</header>
 	
 	<body>
-	
+		
+		<!-- Sign up | Log in Pop up -->
+		
 		<div id = "overlay">
 		</div>
 		<section id = "bg">
@@ -48,18 +57,18 @@
 			<section id = "innerbgLogIn">
 				<img src="assets/logo.png" id = "logo">
 				<h3 id = "email">Email:</h3>
-				<input id = "user" type="text" placeholder="Email" align="left">
+				<input id = "user" type="text" name="Email:" align="left">
 				<h3 id = "password">Password:</h3>
-				<input id = "pass" type="text" placeholder="Password" align="left">
+				<input id = "pass" type="text" name="Password:" align="left">
 				<h5 id = "SignUp">Sign Up</h5>
 				<h5 id = "Login">Login</h5>
 			</section>
 			
 			<section id = "innerbgSignUp">
 				<h3 id = "email">Email:</h3>
-				<input id = "user" type="text" placeholder="Please Enter an Email" align="left">
+				<input id = "user" type="text" name="Email:" align="left">
 				<h3 id = "password">Password:</h3>
-				<input id = "pass" type="text" placeholder="8 Characters Minimum" align="left">
+				<input id = "pass" type="text" name="Password:" align="left">
 				<h3 id = "capture">reCaptura:</h3>
 				<div id = "captura" class="g-recaptcha" data-theme = "dark" data-sitekey="6Le3hj8UAAAAAH6USVQAkg0HA6UgdXwvUIARZi0k"></div>
 				<h5 id = "SignUp">Sign Up</h5>
@@ -67,60 +76,98 @@
 			</section>
 		</section>
 		
-		<section id = "accesoriesImage">
-			<h1>Accessories</h1>
-			<img src="assets/accessorybg.jpg" id = "accessoryImage">
+		<!-- Buy Page -->
+		
+		<section id = "BuyTitle">
+			<h1>Phone Title</h1>
 		</section>
 		
-		<section id = "searchProduct">
-			<h1>Find what you need</h1>
-			<div id = "searchBg">
-				<img src="assets/SearchIcon.png" id = "searchIcon">
-				<input id = "searchItem" type="text" placeholder="Search" align="left">
-			</div>
-			<h5 id = "categorybutton">Browse by category</h5>
-			<h5 id = "productbutton">Browse by product</h5>
+		<section id = "chooseColour">
+			<h1>Choose a colour</h1>
+			<section id = "colours">
+				<div class = "colour">
+					<img src="assets/Black.png" id = "colour1">
+					<br>
+					<span>Black</span>
+				</div>
+				
+				<div class = "colour">
+					<img src="assets/Grey.png" id = "colour2">
+					<br>
+					<span>Grey</span>
+				</div>
+				
+				<div class = "colour">
+					<img src="assets/Gold.png" id = "colour3">
+					<br>
+					<span>Gold</span>
+				</div>
+			</section>
 		</section>
 		
-		<section id = "categories">
-			<div class = "categories">
-				<img src="assets/TC-BLACK.png" class = "AccessoryImage" id = "WhatsNew">
-				<h5 class = "AccessoryTitles" >What's New</h5>
-			</div>
-			
-			<div class = "categories">
-				<img src="assets/Case.png" class = "AccessoryImage" id = "Cases">
-				<h5 class = "AccessoryTitles">Cases and Protection</h5>
-			</div>
-			
-			<div class = "categories">
-				<img src="assets/Headphones.png" class = "AccessoryImage" id = "Headphones">
-				<h5 class = "AccessoryTitles">Headphones and Speakers</h5>
-			</div>
-			
-			<div class = "categories">
-				<img src="assets/Plug.png" class = "AccessoryImage" id = "Power">
-				<h5 class = "AccessoryTitles">Power and Cables</h5>
-			</div>
+		<section id = "chooseCapacity">
+			<h1>Choose a storage capacity</h1>
+			<section id = "capacity">
+				<h5 id = "GB16">
+					16GB
+					<br>
+					<span>Storage Capacity</span>
+				</h5>
+				<h5 id = "GB32">
+					32GB
+					<br>
+					<span>Storage Capacity</span>
+				</h5>
+				<h5 id = "GB64">
+					64GB
+					<br>
+					<span>Storage Capacity</span>
+				</h5>
+			</section>
 		</section>
 		
-		<section id = "product">
-			<div class = "products">
-				<img src="assets/PhoneAccessories.png" class = "AccessoryImage" id = "Phones">
-				<h5 class = "AccessoryTitles">Phones</h5>
-			</div>
-			
-			<div class = "products">
-				<img src="assets/LaptopAccessories.png" class = "AccessoryImage" id = "Laptops">
-				<h5 class = "AccessoryTitles">Laptops</h5>
-			</div>
-			
-			<div class = "products">
-				<img src="assets/PCAccessories.png" class = "AccessoryImage" id = "PCs">
-				<h5 class = "AccessoryTitles">PCs</h5>
-			</div>
+		<section id = "chooseCarrier">
+			<h1>Select a carrier</h1>
+			<section id = "carrier">
+				<h5 class = "carriers" id = "EE">
+					EE
+				</h5>
+				<h5 class = "carriers" id = "Three">
+					Three
+				</h5>
+				<h5 class = "carriers" id = "Vodafone">
+					Vodafone
+				</h5>
+				<h5 class = "carriers" id = "O2">
+					O2
+				</h5>
+				<h5 class = "carriers" id = "SimFree">
+					Sim Unlocked
+				</h5>
+			</section>
 		</section>
+		
+		<section id = "thePrice">
+			<h1>Your Price</h1>
+			<div id = "Items">
+				<h5 class = "Index" id = "ChosenPhone">Phone: N/A</h5>
+				<h5 class = "Index" id = "ChosenColour">Colour: N/A</h5>
+				<h5 class = "Index" id = "ChosenCapacity">Capacity: N/A</h5>
+				<h5 class = "Index" id = "ChosenCarrier">Carrier: N/A</h5>
+			</div>
+			
+			<div id = "divider">
+				<h5 class = "TotalAmounts" id = "TotalPrice">Total Price: £0.00</h5>
+				<h5 class = "TotalAmounts" id = "VAT">VAT: £0.00</h5>	
+			</div>
+			
+			<h5 class = "BuyButtons" id = "CancelButton">Cancel</h5>
+			<h5 class = "BuyButtons" id = "CheckoutButton">Basket</h5>
+		</section>
+		
 	</body>
+	
+	<!-- Footer -->
 	
 	<footer>
 		<div class = "row, FooterRow">
@@ -136,10 +183,10 @@
 						</li>
 					</a>
 					<div id = "shop" class = "lighter">
-						<li id = "PhoneIndex">Phones</li>
-						<li id = "LaptopIndex">Laptops</li>
-						<li id = "PCIndex">PC</li>
-						<li id = "AccessoriesIndex">Accessories</li>
+						<li><a class = "lighter" href = "Phones.html">Phones</a></li>
+						<li> <a class = "lighter" href = "PCs.html">Laptops</a></li>
+						<li> <a class = "lighter" href = "PCs.html">PC</a></li>
+						<li> <a class = "lighter" href = "Accessories.html">Accessories</a></li>
 					</div>
 				</ul>
 			</div>
@@ -156,10 +203,10 @@
 						</li>
 					</a>
 					<div id = "account" class = "lighter">
-						<li id = "SignIndex"> Sign up</li>
-						<li id = "LogIndex"> Log in</li>
-						<li id = "PasswordIndex"> Forgot your password</li>
-						<li id = "AccountIndex"> Manage your account</li>
+						<li> <a class = "lighter" href = "Account.html">Sign up</a></li>
+						<li> <a class = "lighter" href = "Account.html">Log in</a></li>
+						<li> <a class = "lighter" href = "Account.html">Forgot your password</a></li>
+						<li> <a class = "lighter" href = "Account.html">Manage your account</a></li>
 					<div>						
 				</ul>
 			</div>
@@ -176,14 +223,18 @@
 						</li>
 					</a>
 					<div id = "social" class = "lighter">
-						<li id = "FBIndex"> 
-							<img id = "fb" src="assets/fb.png">
-							<span class = "caption">/TechnoCorps</span>
+						<li> 
+							<a class = "lighter" href = "https://www.facebook.com/TechnoCorps">
+								<img id = "fb" src="assets/fb.png">
+								<span class = "caption">/TechnoCorps</span>
+							</a>
 						</li>
 						<li>
-						<li id = "TwitterIndex"> 
-							<img id = "tw" src="assets/twitter.png">
-							/OfficialTechnoCorps
+						<li> 
+							<a class = "lighter" href = "https://www.twitter.com/OfficialTechnoCorps">
+								<img id = "tw" src="assets/twitter.png">
+								/OfficialTechnoCorps
+							</a>
 						</li>
 					</div>
 				</ul>
@@ -201,7 +252,7 @@
 						</li>
 					</a>
 					<div id = "about" class = "lighter">
-						<li id = "AboutIndex">About Us</li>
+						<li></li>
 					</div>
 				</ul>
 			</div>
