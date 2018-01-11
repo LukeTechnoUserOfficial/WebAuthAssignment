@@ -1,0 +1,335 @@
+<!doctype html>
+	
+	<!-- Assets / Scripts / Data -->
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width", initial-scale=1">
+		<title>TechnoCorps - Document</title>
+		<link rel="stylesheet" href="css/styles.css"> 
+		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.png">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="https://www.jeasyui.com/easyui/jquery.easyui.min.js"></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	
+	<!-- Header -->
+	
+	<header>
+		<div class = "row">
+			<div class = "column_top" id = "left">
+				<img src="assets/signup.png" class = "signup">
+				<img src="assets/login.png" class = "login">
+				<h4 id = "welcometext" >Hello Luke!</h4>
+			</div>
+			<div class = "column_top">
+				<img src="assets/logo.png" id = "mainlogo">
+			</div>
+			<div class = "column_top" id = "right">
+				<a href = "Checkout.html">
+					<img src="assets/basket.png" class = "basket">
+				</a>
+			</div>
+		</div>
+		
+		<nav>
+			<ul>
+				<li><a href="Home.html">Home</a></li>
+				<li><a href="Phones.html">Phones</a></li>
+				<li><a href="PCs.html">PC</a></li>
+				<li><a href="Accessories.html">Accessories</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<body>
+		
+		<!-- Sign up | Log in Pop up -->
+		
+		<div id = "overlay">
+		</div>
+		<section id = "bg">
+			<h3 id = "Close">X</h3>
+			<h1 id = "LogTitle">Log in</h1>
+			<h1 id = "SignTitle">Sign up</h1>
+			<section id = "innerbgLogIn">
+				<img src="assets/logo.png" id = "logo">
+				<h3 id = "email">Email:</h3>
+				<input id = "user" type="text" name="Email:" align="left">
+				<h3 id = "password">Password:</h3>
+				<input id = "pass" type="text" name="Password:" align="left">
+				<h5 id = "SignUp">Sign Up</h5>
+				<h5 id = "Login">Login</h5>
+			</section>
+			
+			<section id = "innerbgSignUp">
+				<h3 id = "email">Email:</h3>
+				<input id = "user" type="text" name="Email:" align="left">
+				<h3 id = "password">Password:</h3>
+				<input id = "pass" type="text" name="Password:" align="left">
+				<h3 id = "capture">reCaptura:</h3>
+				<div id = "captura" class="g-recaptcha" data-theme = "dark" data-sitekey="6Le3hj8UAAAAAH6USVQAkg0HA6UgdXwvUIARZi0k"></div>
+				<h5 id = "SignUp">Sign Up</h5>
+				<h5 id = "Login">Login</h5>
+			</section>
+		</section>
+		
+		<!-- Document Page -->
+		
+		<p class = "Alignment">
+			<br>
+			<strong>Name:</strong>
+			Luke Bond
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			<strong>Student ID:</strong>
+			17642745
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			<strong>Learning Outcomes:</strong>
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			[LO1] – Understand the strengths and weaknesses of current web specifications and standards over previous version iterations.
+			<br>
+			<br>
+			[LO3] – Apply appropriate web standards ensuring maximum interoperability.
+		</p>
+		
+		<br>
+		
+		<p class = "Alignment">
+			<strong>Website:</strong>
+			<a class = "Links" href = "https://luketechnouserofficial.github.io/WebAuthAssignment/">Supported Link</a>
+		</p>
+		
+		<br>
+		
+		<p class = "Alignment">
+			<strong>The Critical Log:</strong>
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			In this document, I will be talking about how interoperability is important and how I have applied these web standards in a website that I have created from scratch. I will also be outlining the strengths and weaknesses of web standards over previous iterations. The definition of interoperability is how information is exchanged and made use of [1]. For example, a website displays information that is useful to others and it is displayed digitally and publicly to everyone around the world that is interested in using that information.  
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			Other the past 15 weeks, I have been working on a responsive website using my acquired skills from the university. I was given the choice to create a website for a band or a brand that either is an official band/ company or could be made up. I had decided to develop a new brand for this assignment, although it hasn’t been very made up as I have been developing a brand of my own for some time. When planning out the website, I used popular websites to help make the site look professional. As my brand was a technology company, I had to be technical and support the web standards that are now law to follow when publishing a website. Using all of the techniques learned from my university, I applied particular web standards that most companies would use. However, when using a validation check website, there were many web standards that, I admit, had no idea on why the standards were so specific.
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			Through my website, I had designed 9 web pages, 2 of which are duplicated styles. I have tried to stick with my site map in designing the website, however a few pages on my site map have been merged with other pages to make the website more professional and to cut down a massive number of pages. I will be showing the validation reports of all the individual pages, going through and fixing them. I can confirm that none of my pages were validated when I put them into the validator. A lot of my pages had a lot of duplicated code within it, for example the footer and heading were always the same and so that was simple to edit one page and then paste the code throughout the pages. The body of the pages also had errors and problems ranging from CSS, HTML and JavaScript errors, however they did not affect the overall performance of the website
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			<strong>File Structure / Organisation:</strong>
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			Throughout my code I managed to organise all the pages. As I had decided to use one stylesheet for the entire website, I had to make sure it was just not piles of code, I had to organise it by commenting certain areas. I commented the styles by pages so that if anyone who was developing or editing the website, the developer would know where each of the styles are for each page. When developing my root folder, I assigned folders for each of the different file extensions. For example, I was dealing with HTML, CSS, JS and Jquery. These had their separate folders. As JS and Jquery can be used together, I only assigned for them. I also made an assets folder which contained all the images used for the website. Here is an image of my file structure. 
+			<br>
+			<br>
+			<img src = "assets/File_Structure.png">
+		</p>
+		
+		<p class = "Alignment">
+			<strong>W3C Validation Report</strong>
+			
+			<br>
+			<br>
+			
+			<strong>Index.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Validation_Index.png">
+			
+			<br>
+			<br>
+			
+			<strong>Home.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Home_Index.png">
+			
+			<br>
+			<br>
+			
+			<strong>Phones.html | PCs.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Validation_Phones.png">
+			
+			<br>
+			<br>
+			
+			<strong>Accessories.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Validation_Accessories.png">
+			
+			<br>
+			<br>
+			
+			<strong>BuyPhone.html | BuyPC.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Validation_BuyPhone.png">
+			
+			<br>
+			<br>
+			
+			<strong>LearnMore.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Validation_LearnMore.png">
+			
+			<br>
+			<br>
+			
+			<strong>Checkout.html</strong>
+			<br>
+			<br>
+			<img src = "assets/Validation_Checkout.png">
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			<strong>W3C Validation Summary</strong>
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			A problem that occurred in all instances is that I used the same IDs throughout all my html documents. The W3C gave me a warning for that, however I believe that in this case it wouldn’t affect my website. The reason I made them all IDs was because there was only one occurrence of them within each of the html documents. 
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			Another error that has come up on the validation report is that I am not using alternative images for the image tags. This displays a default image if the original one is not found or irretrievable. Many websites use this just in case things go wrong. It’s better to have something there than nothing at all. 
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			The validator also picked up an error that I was marking up my body with tags. This was an issue for the validator because I believe if you do not tag the head or the footer it will automatically be part of the body. I believe that having the header, body and footer there makes it easier for the developer to organise their code. As everything is cascaded, it’s good to see it visually using tabs and other tags.
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			Considering the errors, they didn’t seem to be massive mistakes that could potentially harm the website. They give a more grammatical way of thinking about HTML. Providing you with the most important properties that are required for each of the tags.
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			Next time I develop a website, I will make sure that all the pages are fully validated. I was expecting a few to be completely validated but as most of the entities on the page were duplicates of things like the navigation bar and the footer. The only thing that changes is the body mainly. A few weaknesses would be the fancy art that I would have needed to find to make the website look stunning. As seen by the website, I made every single icon and image apart from the one displayed in the accessories page. Hopefully I will be able to learn how to use photoshop or take fascinating pictures to use for my website in the future. A strength of mine would be my creativity, I have a great mind and I tend to go the extra mile and try to be different from the other people. I didn’t really want to develop a website for a band or an existing brand because that would be easier than me coming up with a brand-new idea and creating a logo to represent the brand. It was a challenge for me and, so I took the freedom of the assignment to my advantage.
+		</p>
+		
+		<p class = "Alignment">
+			<br>
+			<strong>References:</strong>
+			<br>
+			<br>
+			Interoperability - <a class = "Links" href = "https://en.oxforddictionaries.com/definition/interoperability">Supported Link</a>
+			| Publisher: Oxford Dictionaries
+			<br>
+			<br>
+		</p>
+	
+	<!-- Footer -->
+	
+	<footer>
+		<div class = "row, FooterRow">
+			<div class = "Footercolumn">
+				<ul class = "FooterList">
+					<li class = "heading-regular">
+						<strong>Shop</strong>
+					</li>
+					<a id = "shop-button" class = "FooterButton" href = "">
+						<li class = "heading-button">
+							<strong>Shop</strong>
+							<span id = "shop-arrow" class = "dropdown">+</span>
+						</li>
+					</a>
+					<div id = "shop" class = "lighter">
+						<li id = "PhoneIndex">Phones</li>
+						<li id = "LaptopIndex">Laptops</li>
+						<li id = "PCIndex">PC</li>
+						<li id = "AccessoriesIndex">Accessories</li>
+					</div>
+				</ul>
+			</div>
+			
+			<div class = "Footercolumn">
+				<ul class = "FooterList">
+					<li class = "heading-regular">
+						<strong>Account</strong>
+					</li>
+					<a id = "account-button" class = "FooterButton" href = "">
+						<li class = "heading-button">
+							<strong>Account</strong>
+							<span id = "account-arrow" class = "dropdown">+</span>
+						</li>
+					</a>
+					<div id = "account" class = "lighter">
+						<li id = "SignIndex"> Sign up</li>
+						<li id = "LogIndex"> Log in</li>
+						<li id = "PasswordIndex"> Forgot your password</li>
+						<li id = "AccountIndex"> Manage your account</li>
+					<div>						
+				</ul>
+			</div>
+			
+			<div class = "Footercolumn">
+				<ul class = "FooterList">
+					<li class = "heading-regular">
+						<strong>Social Media</strong>
+					</li>
+					<a id = "social-button" class = "FooterButton" href = "">
+						<li class = "heading-button">
+							<strong>Social Media</strong>
+							<span id = "social-arrow" class = "dropdown">+</span>
+						</li>
+					</a>
+					<div id = "social" class = "lighter">
+						<li id = "FBIndex"> 
+							<img id = "fb" src="assets/fb.png">
+							<span class = "caption">/TechnoCorps</span>
+						</li>
+						<li>
+						<li id = "TwitterIndex"> 
+							<img id = "tw" src="assets/twitter.png">
+							/OfficialTechnoCorps
+						</li>
+					</div>
+				</ul>
+			</div>
+			
+			<div class = "Footercolumn">
+				<ul class = "FooterList">
+					<li class = "heading-regular">
+						<strong>About TechnoCorps</strong>
+					</li>
+					<a id = "about-button" class = "FooterButton" href = "">
+						<li class = "heading-button">
+							<strong>About TechnoCorps</strong>
+							<span id = "about-arrow" class = "dropdown">+</span>
+						</li>
+					</a>
+					<div id = "about" class = "lighter">
+						<li id = "AboutIndex">About Us</li>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</html>

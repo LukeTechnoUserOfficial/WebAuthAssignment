@@ -17,9 +17,18 @@
 		padding-right: 1em;
 	}
 	
-	/* ACCOUNT PAGE */
+	/* DOCUMENT PAGE */
 	
+	.Alignment {
+		margin:0;
+		text-align: left;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 	
+	.Links {
+		height: 20px;
+	}
 	
 	/* CHECKOUT PAGE */
 	
